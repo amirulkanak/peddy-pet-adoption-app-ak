@@ -1,0 +1,5 @@
+# node libraries
+/node_modules
+
+# project requirements
+project-requirement.md

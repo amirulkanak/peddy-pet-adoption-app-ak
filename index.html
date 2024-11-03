@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basics -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/amirulkanak.ico"
+      type="image/x-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Page Tittle -->
+    <title>Peddy</title>
+
+    <!-- =======================================================
+    * Name: Peddy - Pet Adoption Platform
+    * Updated: October 08 2024
+    * Developer: Amirul Alam Kanak
+    * Github: github.com/amirulkanak
+    * Credits: Programming Hero module-36 (assignment-6) web.programming-hero.com
+    ======================================================== -->
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <header class="pt-14">
+      <!-- Navigation -->
+      <nav class="max-width-wrapper flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+          <img src="./assets/icons/logo.webp" alt="Peddy Logo" class="h-6" />
+          <h2
+            class="text-clr-woodsmoke text-[2rem] leading-[2.375rem] font-black">
+            Peddy
+          </h2>
+        </div>
+
+        <!-- Links -->
+        <ul
+          class="hidden text-clr-woodsmoke text-[1rem] leading-[1.188rem] sm:flex gap-2 items-center">
+          <li
+            class="px-3 py-2 rounded-lg hover:bg-clr-paradiso hover:text-white duration-300">
+            <a href="#">Home</a>
+          </li>
+          <li
+            class="px-3 py-2 rounded-lg hover:bg-clr-paradiso hover:text-white duration-300">
+            <a href="#">Shop</a>
+          </li>
+          <li
+            class="px-3 py-2 rounded-lg hover:bg-clr-paradiso hover:text-white duration-300">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+
+        <!-- user Icon -->
+        <div
+          class="hidden size-14 rounded-full border border-solid border-clr-paradiso/40 sm:flex items-center justify-center">
+          <img
+            src="https://img.icons8.com/?size=100&id=114140&format=png&color=000000"
+            alt="User Profile"
+            class="h-8" />
+        </div>
+
+        <!-- mobile menu -->
+        <div class="da-dropdown da-dropdown-end sm:hidden">
+          <!-- hamburger icon -->
+          <div tabindex="0" role="button" class="">
+            <img
+              src="https://img.icons8.com/?size=100&id=36389&format=png&color=000000"
+              alt="Mobile Menu"
+              class="h-8" />
+          </div>
+
+          <!-- links -->
+          <ul
+            tabindex="0"
+            class="da-dropdown-content flex flex-col gap-1 items-center bg-clr-paradiso text-white rounded-box z-[1] mt-3 w-52 p-4 shadow">
+            <!-- user icon -->
+            <li
+              class="size-14 rounded-full border border-solid border-clr-paradiso/40 flex items-center justify-center mb-4 bg-white">
+              <img
+                src="https://img.icons8.com/?size=100&id=114140&format=png&color=000000"
+                alt="User Profile"
+                class="h-8" />
+            </li>
+            <li
+              class="px-3 py-2 rounded-lg hover:bg-white hover:text-clr-woodsmoke duration-300">
+              <a href="#">Home</a>
+            </li>
+            <li
+              class="px-3 py-2 rounded-lg hover:bg-white hover:text-clr-woodsmoke duration-300">
+              <a href="#">Shop</a>
+            </li>
+            <li
+              class="px-3 py-2 rounded-lg hover:bg-white hover:text-clr-woodsmoke duration-300">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Navigation End -->
+
+      <!-- Hero Section -->
+      <section class="max-width-wrapper mt-12 flex flex-col items-center">
+        <h2
+          class="mb-3 sm:mb-6 text-clr-woodsmoke/60 text-[1rem] sm:text-[1.5rem] font-bold flex items-center gap-1">
+          Bringing Families Together
+          <img
+            src="./assets/icons/heart-emoji.svg"
+            alt="Herat Emoji"
+            class="size-6" />
+        </h2>
+        <h1
+          class="max-w-[47rem] text-center text-clr-woodsmoke text-[2rem] leading-[2.5rem] sm:text-[3rem] sm:leading-[3.5rem] lg:text-[4.5rem] lg:leading-[5.5rem] font-black">
+          Your Path to Adoption Starts Here
+        </h1>
+        <p
+          class="max-w-[47rem] mt-6 text-center text-clr-woodsmoke text-[1rem] leading-[1.625rem]">
+          We are a organization that helps you find the perfect pet for your
+          family. We have a wide range of animals that are looking for a loving
+          home.
+        </p>
+
+        <!-- view more button -->
+        <a
+          href="#adopt-section"
+          class="mt-8 px-8 py-4 bg-clr-paradiso hover:bg-clr-paradiso/60 text-white hover:text-clr-woodsmoke duration-300 text-[1.25rem] leading-[1.5rem] font-bold rounded-[0.75rem] border-none">
+          View More
+        </a>
+
+        <!-- Hero image -->
+        <img
+          src="./assets/images/pet.webp"
+          alt="Dog and Cat"
+          class="mt-12 max-[50rem]" />
+      </section>
+    </header>
+    <main>
+      <!-- Adopt section -->
+      <section
+        id="adopt-section"
+        class="max-width-wrapper mt-[6.25rem] flex flex-col items-center gap-3 sm:gap-6">
+        <h2
+          class="text-clr-woodsmoke text-[1.5rem] leading-[1.5rem] sm:text-[2.5rem] sm:leading-[3rem] font-black">
+          Adopt Your Best Friend
+        </h2>
+        <p
+          class="max-w-[39.75rem] text-clr-woodsmoke/70 text-center text-[1rem] leading-[1.625rem]">
+          We have a wide range of animals that are looking for a loving home.
+          You can find the perfect pet for your family here.
+        </p>
+      </section>
+
+      <!-- Categories Buttons Section -->
+      <section class="max-width-wrapper mt-12">
+        <div
+          id="categories-btn-container"
+          class="flex flex-wrap items-center justify-center gap-6"></div>
+      </section>
+
+      <!-- Pets Section -->
+      <section class="max-width-wrapper mt-8 mb-8">
+        <div
+          class="flex flex-col sm:flex-row gap-6 items-center justify-between">
+          <h3
+            class="text-clr-woodsmoke text-[1.5rem] leading-[1.813rem] font-black">
+            Best Deal For you
+          </h3>
+
+          <!-- Sort by price button -->
+          <button
+            id="sort-by-price-btn"
+            onclick="sortByPrice()"
+            class="px-8 py-4 bg-clr-paradiso hover:bg-clr-paradiso/60 text-white hover:text-clr-woodsmoke duration-300 text-[1.25rem] leading-[1.5rem] font-bold rounded-[0.75rem] border-none">
+            Sort by Price
+          </button>
+        </div>
+
+        <!-- Pets cards and Picture Grid -->
+        <div
+          class="mt-8 grid grid-cols-1 md:grid-cols-5 lg:grid-cols-6 pc:grid-cols-8 gap-4 md:gap-2 lg:gap-6">
+          <!-- Pet Card container -->
+          <div
+            id="pet-cards-container"
+            class="md:col-span-4 pc:col-span-6 grid grid-cols-1 md:grid-cols-2 gap-2 lg:gap-6 pc:grid-cols-3 justify-self-center md:justify-self-end"></div>
+
+          <!-- Picture card container -->
+          <div
+            class="md:col-span-1 lg:col-span-2 p-5 max-w-[19.5rem] max-h-full w-full h-full justify-self-center md:justify-self-start border border-solid border-clr-woodsmoke/10 rounded-xl">
+            <div
+              id="picture-cards-container"
+              class="w-fit h-fit grid grid-cols-2 gap-4 md:grid-cols-1 lg:grid-cols-2 lg:gap-6"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Details Modal -->
+      <dialog id="pet-details-modal" class="da-modal"></dialog>
+
+      <!-- Adopt Modal -->
+      <dialog id="pet-adopt-modal" class="da-modal"></dialog>
+    </main>
+    <footer class="mt-auto bg-clr-woodsmoke py-[6.25rem]">
+      <section
+        class="max-width-wrapper flex flex-col items-center sm:flex-row sm:items-start sm:justify-between gap-8">
+        <div class="space-y-6 order-3 sm:order-1">
+          <!-- Logo -->
+          <div class="flex items-center justify-center sm:justify-start gap-3">
+            <img src="./assets/icons/logo.webp" alt="Peddy Logo" />
+            <h2 class="text-white text-[2rem] leading-[2.375rem] font-black">
+              Peddy
+            </h2>
+          </div>
+
+          <!-- Address -->
+          <address
+            class="text-center sm:text-start text-white/90 text-[1rem] font-normal not-italic leading-[2rem]">
+            Location: av. Washington 165, NY CA 54003 <br />
+            Phone: +31 85 964 47 25 <br />
+            Email: info@yourdomain.com <br />
+            Openings hours: 9.00 AM - 5.00 PM
+          </address>
+
+          <!-- Social Links -->
+          <div class="flex items-center justify-center sm:justify-start gap-6">
+            <!-- facebook -->
+            <a href="#" class="w-8">
+              <img
+                src="https://img.icons8.com/?size=100&id=uLWV5A9vXIPu&format=png&color=000000"
+                alt="Facebook" />
+            </a>
+
+            <!-- X -->
+            <a href="#" class="w-8">
+              <img
+                src="https://img.icons8.com/?size=100&id=fJp7hepMryiw&format=png&color=FFFFFF"
+                alt="X" />
+            </a>
+
+            <!-- youtube -->
+            <a href="#" class="w-8">
+              <img
+                src="https://img.icons8.com/?size=100&id=19318&format=png&color=000000"
+                alt="Youtube" />
+            </a>
+
+            <!-- instagram -->
+            <a href="#" class="w-8">
+              <img
+                src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000"
+                alt="Instagram" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="order-2">
+          <h4
+            class="text-white/90 text-[1.125rem] leading-[1.375rem] font-bold">
+            Useful Links
+          </h4>
+          <ul
+            class="mt-8 text-white/60 flex flex-col items-center sm:items-start tex-[1rem] leading-[2rem] space-y-3">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Animals</a></li>
+            <li><a href="#">Foundation</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="order-1 sm:order-3">
+          <h4
+            class="text-center sm:text-start text-white/90 text-[1.125rem] leading-[1.375rem] font-bold">
+            Drop a Message
+          </h4>
+
+          <!-- input email and subscribe button -->
+          <div class="flex flex-col gap-4 mt-8">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="da-input w-full max-w-[15rem] px-[1.06rem] py-[0.94rem] text-[1rem] leading-[1.188rem] text-white/60 bg-white/5 rounded-[0.75rem] focus:outline-none" />
+            <button
+              class="da-btn w-full no-animation max-w-[15rem] bg-clr-paradiso hover:bg-clr-paradiso/60 text-white text-[1.25rem] leading-[1.5rem] font-bold rounded-[0.75rem] border-none focus:outline-none">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

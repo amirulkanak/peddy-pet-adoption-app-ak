@@ -1,0 +1,19 @@
+{
+  "name": "peddy",
+  "version": "1.0.0",
+  "description": "Pet Adoption Platform",
+  "main": "index.html",
+  "scripts": {
+    "dev": "tailwindcss -i ./input.css -o ./assets/css/style.css --watch"
+  },
+  "repository": {
+    "type": "github",
+    "url": "Private"
+  },
+  "author": "Amirul Alam Kanak",
+  "license": "ISC",
+  "devDependencies": {
+    "daisyui": "^4.12.12",
+    "tailwindcss": "^3.4.13"
+  }
+}

@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.kanak {
+  border: 1px solid blue;
+}
+
+@layer components {
+  .max-width-wrapper {
+    @apply max-w-[82.5rem] mx-auto pc:px-0 px-4;
+  }
+}
+
+@layer utilities {
+  body {
+    @apply font-lato;
+  }
+}
